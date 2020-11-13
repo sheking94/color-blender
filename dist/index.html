@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>RGB COLOR BLENDER</h1>
+        <h4>
+          Input 2 colors in RGB hexadecimal value and drag the slider to get a
+          blended color.
+        </h4>
+      </header>
+      <main>
+        <p>
+          Color 1: #<input
+            type="text"
+            maxlength="6"
+            size="6"
+            id="color1"
+            placeholder="hex"
+          />
+        </p>
+        <p>
+          Color 2: #<input
+            type="text"
+            maxlength="6"
+            size="6"
+            id="color2"
+            placeholder="hex"
+          />
+        </p>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          class="slider"
+          id="blender"
+        />
+        <div class="boxes-container">
+          <div class="color-box" id="box-color1"></div>
+          <div class="color-box" id="box-blend"></div>
+          <div class="color-box" id="box-color2"></div>
+        </div>
+        <p id="blend-value"></p>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
